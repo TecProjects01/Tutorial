@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Queries</title>
+    <title>Flexboxes</title>
     <link rel="stylesheet" href="styleLF.css">
 </head>
 
@@ -17,6 +17,37 @@
             <a href="index.html" class="btnHead">Inicio<span></span></a>
         </nav>
     </header>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+    <div class="card">
+        <div class="head">Flexbox</div>
+        <div class="content">
+            Flexbox é um modelo de layout do CSS criado para organizar elementos de forma
+            prática e responsiva. Ele facilita o alinhamento, distribuição de espaço e posicionamento de itens dentro de
+            um container. Use o inspecionar e mude as características do container acima.<br><br> <mark>Display</mark>: flex é a propriedade que ativa o Flexbox.<br>
+            <mark>Flex-direction</mark>: Define como os itens
+            são organizados, sendo row = linha horizontal, row-reverse = invertida, column = coluna vertical e
+            column-reverse = invertido.
+            <br> <mark>Justify-content</mark>: Controla o alinhamento dos itens no eixo principal, com opções como
+            flex-start, flex-end, center, space-between e space-around. <br> <mark>Align-items</mark>: Controla o
+            alinhamento dos itens no eixo transversal, com opções como flex-start, flex-end, center, baseline e stretch.
+            <br>
+            <mark>Flex-wrap</mark>: Controla se os itens devem quebrar para a próxima linha quando não houver espaço
+            suficiente, com opções como nowrap, wrap e wrap-reverse. <br> <mark>Align-content</mark>: Controla o
+            alinhamento das linhas quando há espaço extra no eixo transversal, com opções como flex-start, flex-end,
+            center, space-between e space-around. <br> <mark>Order</mark>: Permite alterar a ordem dos itens dentro do
+            container, atribuindo um valor numérico a cada item, onde itens com valores menores aparecem antes dos itens
+            com valores maiores. <br> <mark>Gap</mark>: Controla o espaçamento entre os itens no eixo principal. <br>
+            <mark>Align-self</mark>: Permite que um item individual tenha um alinhamento diferente dos outros itens, com
+            opções como auto, flex-start, flex-end, center, baseline e stretch.
+            <br />
+            <button class="btnCard">Botão inutil</button>
+        </div>
+    </div>
 </body>
 
 </html>
