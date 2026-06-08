@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM e Eventos</title>
+    <link rel="stylesheet" href="styleDom.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            Tutorial
+        </div>
+        <nav>
+            <a href="index.html" class="btnHead">Inicio<span></span></a>
+        </nav>
+    </header>
+
+    <div class="card">
+        <div class="head">Manipulação de DOM e Eventos</div>
+
+        <div class="content">
+            O DOM (Document Object Model) representa os elementos HTML de uma página
+            como objetos que podem ser acessados e modificados com JavaScript.
+
+            <br><br>
+
+            Eventos são ações que acontecem na página, como cliques, teclas pressionadas
+            ou movimentação do mouse. Podemos usar eventos para executar funções quando
+            o usuário interage com a página.
+
+            <br><br>
+
+            Exemplo: ao clicar nos botões abaixo, verá que não acontece nada de importante
+            na sua vida, mas é divertido.
+
+            <br><br>
+
+            <p id="texto">Clique no botão para modificar este texto.</p>
+
+            <button class="btnCard" id="btnDom">
+                Botão util.
+            </button>
+            <button class="btnCardDos" id="btnDom2">
+                Outro botão.
+            </button>
+            <button class="btnCardTres" id="btnDom3">
+                Chega de botão, né?
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const botao = document.getElementById("btnDom");
+        const botao2 = document.getElementById("btnDom2");
+        const botao3 = document.getElementById("btnDom3");
+        const texto = document.getElementById("texto");
+
+        botao.addEventListener("click", function () {
+            texto.textContent = "O DOM foi manipulado com JavaScript!";
+            texto.style.color = "#FF3737";
+            texto.style.fontWeight = "bold";
+        });
+
+        botao2.addEventListener("click", function () {
+            texto.textContent = "Cê gosta de ficar apertando butão hein!";
+            texto.style.color = "#BBFF37";
+            texto.style.fontWeight = "bold";
+        });
+
+        botao3.addEventListener("click", function () {
+            texto.textContent = "Tomara que você desenvolva Koumpounofobia.";
+            texto.style.color = "#3737FF";
+            texto.style.fontWeight = "bold";
+        });
+    </script>
+
+</body>
+
+</html>

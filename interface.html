@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Formulários</title>
+    <link rel="stylesheet" href="styleInter.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            Tutorial
+        </div>
+        <nav>
+            <a href="index.html" class="btnHead">Inicio<span></span></a>
+        </nav>
+    </header>
+
+    <div class="card">
+        <div class="head">Validação de Formulários</div>
+
+        <div class="content">
+            A validação de formulários é utilizada para verificar se os dados
+            informados pelo usuário são válidos antes de serem enviados.
+
+            <br><br>
+
+            Ela ajuda a evitar informações incorretas, melhora a experiência
+            do usuário e reduz erros no sistema.
+
+            <br><br>
+
+            Exemplo: o campo abaixo exige 5 caracteres.
+
+            <br><br>
+
+            <input type="text" id="nome" placeholder="DIGITE" class="input">
+
+            <br><br>
+
+            <button class="btnCard" id="btnValidar">
+                Validar
+            </button>
+
+            <mensagem id="mensagem"></mensagem>
+        </div>
+    </div>
+
+    <script>
+        const botao = document.getElementById("btnValidar");
+        const nome = document.getElementById("nome");
+        const mensagem = document.getElementById("mensagem");
+
+        botao.addEventListener("click", function () {
+
+            if (nome.value.trim().length < 5 || nome.value.trim().length > 5) {
+                mensagem.textContent = "Quero 5 caracteres. Tente gênio por exemplo.";
+                mensagem.style.color = "red";
+            } else {
+                mensagem.textContent = "Boa!";
+                mensagem.style.color = "green";
+            }
+
+            const valor = nome.value.trim().toLowerCase();
+
+            if (valor === "genio" || valor === "gênio") {
+                mensagem.textContent = "Muito obrigado, sou um gênio mesmo.";
+                mensagem.style.color = "blue";
+            }
+        });
+    </script>
+
+</body>
+
+</html>

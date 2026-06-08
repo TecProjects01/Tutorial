@@ -46,47 +46,10 @@ body {
   padding: 2rem;
 }
 
-.container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: end;
-}
-
-.container2{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-self: flex-start;
-}
-
-.box{
-  width: 100px;
-  height: 100px;
-  margin: 1rem;
-  font-size: 4rem;
-}
-
-#box1{
-  background-color: #FF3737;
-}
-
-#box2{
-  background-color: #E8EDF2;
-}
-
-#box3{
-  background-color: #2C3947;
-}
-
-#box4{
-  background-color: #1e293b;
-}
-
 .card {
   font-family: Montserrat, sans-serif;
-  width: 70rem;
-  justify-content: center;
-  height: 26rem;
+  width: 30rem;
+  height: 25rem;
   translate: -6px -6px;
   background: #ff66a3;
   border: 3px solid #000000;
@@ -94,8 +57,7 @@ body {
   overflow: hidden;
   transition: all 0.3s ease;
   margin-inline: auto;
-  margin-top: 3rem;
-  align-items: center;
+  margin-top: 10rem;
 }
 
 .head {
@@ -119,7 +81,7 @@ body {
 
 .btnCard {
   padding: 5px 10px;
-  margin-top: 0.9rem;
+  margin-top: 0.7rem;
   border: 3px solid #000000;
   box-shadow: 2px 2px 0 #000000;
   font-weight: 750;
@@ -141,4 +103,22 @@ body {
 
 .card:hover {
   translate: -1px;
+}
+
+/* From Uiverse.io by Yaseen549 */ 
+.input {
+  color: white;
+  border: 2px solid #8707ff;
+  border-radius: 10px;
+  padding: 10px 25px;
+  background: black;
+  max-width: 190px;
+}
+
+.input:active {
+  box-shadow: 2px 2px 15px #8707ff inset;
+}
+
+mensagem {
+    margin-left: 1rem;
 }
