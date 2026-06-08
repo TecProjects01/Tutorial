@@ -50,6 +50,9 @@
             <button class="btnCardTres" id="btnDom3">
                 Chega de botão, né?
             </button>
+
+            <br><br>
+            <p id="textoTecla">Pressione qualquer tecla no teclado para ver outro exemplo.</p>
         </div>
     </div>
 
@@ -58,6 +61,7 @@
         const botao2 = document.getElementById("btnDom2");
         const botao3 = document.getElementById("btnDom3");
         const texto = document.getElementById("texto");
+        const textoTecla = document.getElementById("textoTecla");
 
         botao.addEventListener("click", function () {
             texto.textContent = "O DOM foi manipulado com JavaScript!";
@@ -75,6 +79,12 @@
             texto.textContent = "Tomara que você desenvolva Koumpounofobia.";
             texto.style.color = "#3737FF";
             texto.style.fontWeight = "bold";
+        });
+
+        document.addEventListener("keydown", function (event) {
+            textoTecla.textContent = `Tecla pressionada: "${event.key}"`;
+            textoTecla.style.color = "#GGFF37";
+            textoTecla.style.fontStyle = "italic";
         });
     </script>
 
